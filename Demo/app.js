@@ -56,19 +56,19 @@ document.addEventListener('DOMContentLoaded', () => {
   let techWorldLogo = document.querySelector('#navbar__logo');
   if (techWorldLogo) {
     techWorldLogo.addEventListener('click', (e) => {
-      e.preventDefault();
       window.location.href = 'home.html';
     });
   }
 });
 
+//Media Links
 document.addEventListener('DOMContentLoaded', () => {
   const socialLinks = {
     facebook: 'https://www.facebook.com',
     instagram: 'https://www.instagram.com',
     twitter: 'https://twitter.com',
     youtube: 'https://www.youtube.com',
-    linkedin: 'https://www.linkedin.com/in/'
+    linkedin: 'https://www.linkedin.com'
   };
 
   const facebookIcon = document.querySelector('.fa-facebook')?.closest('a');

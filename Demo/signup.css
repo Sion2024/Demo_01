@@ -8,20 +8,16 @@ body {
       margin: 0;
     }
     
-
-    .signup-container {
-      display: grid;
-      position: relative;
-      background-color:lightgray;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      width: 100%;
-      max-width: 400px;
-      box-sizing: border-box;
-      top: 200px;
-      left: 600px;
-    }
+   .signup-container {
+   background-color: lightgray;
+   padding: 40px;
+   border-radius: 10px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+   width: 90%;
+   max-width: 400px;
+   box-sizing: border-box;
+   margin: 150px auto; /* centers it with space below navbar */
+}
 
     .signup-container h2 {
       margin-bottom: 20px;
@@ -69,6 +65,7 @@ body {
     .signup-container p a {
       color: #1887c1;
       text-decoration: none;
+
     }
     .header__logo {
     position: absolute;
@@ -98,4 +95,31 @@ body {
     background: lightgray;
     font-size: 0.9rem;
     text-decoration: none;
+
+    
 }
+
+@media (max-width: 800px) {
+  .signup-container {
+    padding: 30px;
+    margin: 120px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 20px;
+    margin: 100px auto;
+  }
+
+  .signup-container h2 {
+    font-size: 20px;
+  }
+
+  .signup-container input,
+  .signup-container button {
+    font-size: 14px;
+  }
+}
+
+
