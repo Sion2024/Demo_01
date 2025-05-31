@@ -1,0 +1,74 @@
+@import url(styles.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #131313;
+  color: #333;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.support {
+  background-color: #f9f9f9;
+  padding: 30px;
+  margin: 40px auto;
+  text-align: center;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.support h2 {
+  margin-bottom: 20px;
+  color: #1887c1;
+}
+
+#support-form input,
+#support-form textarea {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#support-form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+#support-form button {
+  padding: 10px 30px;
+  background-color: #f77062;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#support-form button:hover {
+  background-color: #4837ff;
+}
+
+#support-status {
+  margin-top: 10px;
+  font-style: italic;
+  color: green;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  padding: 20px;
+  background: #131313;
+  font-size: 0.9rem;
+  text-decoration: none;
+}

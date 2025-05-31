@@ -1,7 +1,7 @@
+@import url(styles.css);
 body {
       font-family: Arial, sans-serif;
       background:#131313;
-      display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
@@ -10,6 +10,8 @@ body {
     
 
     .signup-container {
+      display: grid;
+      position: relative;
       background-color:lightgray;
       padding: 40px;
       border-radius: 10px;
@@ -17,12 +19,15 @@ body {
       width: 100%;
       max-width: 400px;
       box-sizing: border-box;
+      top: 200px;
+      left: 600px;
     }
 
     .signup-container h2 {
       margin-bottom: 20px;
       background-color: #ff8177;
      background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100% );
+     background-clip: standart;
      -webkit-background-clip: text;
      -moz-background-clip: text;
      -webkit-text-fill-color: transparent;
@@ -86,3 +91,11 @@ body {
     background-color: #0f6c9f;
     transform: scale(1.1);
     }
+
+    .footer {
+    text-align: center;
+    padding: 20px;
+    background: lightgray;
+    font-size: 0.9rem;
+    text-decoration: none;
+}

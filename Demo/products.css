@@ -1,3 +1,4 @@
+@import url(styles.css);
 /* Reset and fonts */
 * {
   margin: 0;
@@ -7,7 +8,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: darkgrey;
+  background: #131313;
   color: #333;
   line-height: 1.6;
   text-decoration: none;
@@ -22,12 +23,12 @@ body {
 }
 
 
-
 .header h1 {
     background-color: #ff8177;
     background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100% );
     font-size: 2.5rem;
     margin-bottom: 10px;
+    background-clip: standart;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -39,6 +40,7 @@ body {
   font-size: 1.2rem;
    background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100% );
+    background-clip: standart;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -105,13 +107,7 @@ body {
 .product-card h3 {
   text-decoration: none;
   margin-bottom: 10px;
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100% );
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color:transparent;
-  
+  color: black;
 }
 
 .product-card p {
@@ -136,9 +132,11 @@ body {
 
 /* Footer */
 .footer {
+  color: white;
   text-align: center;
+  margin-top: 80px;
   padding: 20px;
-  background: lightgray;
+  background: #131313;
   font-size: 0.9rem;
   text-decoration: none;
 }

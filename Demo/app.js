@@ -11,26 +11,23 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Home link
-  const homeLink = document.querySelector('a[href="/home.html"]');
+  const homeLink = document.querySelector('a[href="home.html"]');
   const logoHome = document.querySelector('a[href="home.html"]');
 
   if (homeLink) {
-    homeLink.addEventListener('click', () => {
-      console.log('Navigating to Home page');
+    homeLink.addEventListener('click', () => { 
     });
   }
 
   if (logoHome) {
     logoHome.addEventListener('click', () => {
-      console.log('Navigating to Home page (logo)');
     });
   }
 
   // Tech link
-  const techLink = document.querySelector('a[href="tech.html"]');
+  const techLink = document.querySelector('#navbar__logo');
   if (techLink) {
-    techLink.addEventListener('click', () => {
-      console.log('Navigating to Tech page');
+    techLink.addEventListener('click', () => {  
     });
   }
 
@@ -38,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const signUpBtn = document.querySelector('a[href="signup.html"]');
   if (signUpBtn) {
     signUpBtn.addEventListener('click', () => {
-      console.log('Navigating to Sign Up page');
     });
   }
 
@@ -46,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const getStartedMain = document.querySelectorAll('.main__btn a');
   getStartedMain.forEach((btn, i) => {
     btn.addEventListener('click', () => {
-      console.log(`Main "Get Started" button ${i + 1} clicked`);
     });
   });
 
@@ -54,17 +49,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const getStartedServices = document.querySelectorAll('.services__card button');
   getStartedServices.forEach((btn, i) => {
     btn.addEventListener('click', () => {
-      console.log(`Service "Get Started" button ${i + 1} clicked`);
     });
   });
 
   // Logo link override
-  const techWorldLogo = document.querySelector('#navbar__logo');
+  let techWorldLogo = document.querySelector('#navbar__logo');
   if (techWorldLogo) {
     techWorldLogo.addEventListener('click', (e) => {
       e.preventDefault();
-      console.log('TechWorld Inc. logo clicked!');
-      window.location.href = 'techworld.html';
+      window.location.href = 'home.html';
     });
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const socialLinks = {
+    facebook: 'https://www.facebook.com',
+    instagram: 'https://www.instagram.com',
+    twitter: 'https://twitter.com',
+    youtube: 'https://www.youtube.com',
+    linkedin: 'https://www.linkedin.com/in/'
+  };
+
+  const facebookIcon = document.querySelector('.fa-facebook')?.closest('a');
+  const instagramIcon = document.querySelector('.fa-instagram')?.closest('a');
+  const twitterIcon = document.querySelector('.fa-twitter')?.closest('a');
+  const youtubeIcon = document.querySelector('.fa-youtube')?.closest('a');
+  const linkedinIcon = document.querySelector('.fa-linkedin')?.closest('a');
+
+  if (facebookIcon) facebookIcon.setAttribute('href', socialLinks.facebook);
+  if (instagramIcon) instagramIcon.setAttribute('href', socialLinks.instagram);
+  if (twitterIcon) twitterIcon.setAttribute('href', socialLinks.twitter);
+  if (youtubeIcon) youtubeIcon.setAttribute('href', socialLinks.youtube);
+  if (linkedinIcon) linkedinIcon.setAttribute('href', socialLinks.linkedin);
+});
+

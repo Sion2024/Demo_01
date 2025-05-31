@@ -39,7 +39,7 @@
 
 
 
-    
+
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -423,7 +423,7 @@
 } */
 
 .services {
-    background: grey;
+    background:#131313 ;
     display: flex;
     flex-direction: column;
     align-items: center;
