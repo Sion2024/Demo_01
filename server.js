@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
-app.use(cors({ origin:"http://127.0.0.1:5500"} )); // ✅ Enable CORS for all origins
+app.use(cors()); // ✅ Enable CORS for all origins
 app.use(express.json()); // ✅ Parse JSON
 
 const db = mysql.createConnection({
